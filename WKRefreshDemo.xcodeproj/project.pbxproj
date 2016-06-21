@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7906B39E1CCF42EF0026B617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906B39D1CCF42EF0026B617 /* AppDelegate.swift */; };
+		7906B3A51CCF42EF0026B617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7906B3A41CCF42EF0026B617 /* Assets.xcassets */; };
+		7906B3A81CCF42EF0026B617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7906B3A61CCF42EF0026B617 /* LaunchScreen.storyboard */; };
+		7906B3B31CCF42EF0026B617 /* WKRefreshDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906B3B21CCF42EF0026B617 /* WKRefreshDemoTests.swift */; };
+		7906B3BE1CCF42EF0026B617 /* WKRefreshDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906B3BD1CCF42EF0026B617 /* WKRefreshDemoUITests.swift */; };
+		7906B3CE1CD056AE0026B617 /* WKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906B3CD1CD056AE0026B617 /* WKRefreshControl.swift */; };
+		7906B3D01CD05DBD0026B617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7906B3CF1CD05DBD0026B617 /* Main.storyboard */; };
+		7920F57F1CD8499F0084B490 /* WKRichRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920F57E1CD8499F0084B490 /* WKRichRefreshHeader.swift */; };
+		7920F5811CD84B8C0084B490 /* WKAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920F5801CD84B8C0084B490 /* WKAnimationView.swift */; };
+		7920F5861CD89E7A0084B490 /* WKRefreshAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7920F5851CD89E7A0084B490 /* WKRefreshAssets.xcassets */; };
+		7920F5881CD89ECA0084B490 /* WKArrowActivityAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920F5871CD89ECA0084B490 /* WKArrowActivityAnimationView.swift */; };
+		7920F58A1CD8AB6C0084B490 /* WKGIFRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920F5891CD8AB6C0084B490 /* WKGIFRefreshHeader.swift */; };
+		7920F58C1CD8ACAF0084B490 /* WKGIFAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920F58B1CD8ACAF0084B490 /* WKGIFAnimationView.swift */; };
+		7925ACA11CDAF15700852C21 /* WKRichRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925ACA01CDAF15700852C21 /* WKRichRefreshFooter.swift */; };
+		7925ACA31CDB335400852C21 /* WKGIFRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925ACA21CDB335400852C21 /* WKGIFRefreshFooter.swift */; };
+		7925ACA91CDB573100852C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925ACA71CDB573100852C21 /* ViewController.swift */; };
+		7925ACAA1CDB573100852C21 /* WKExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925ACA81CDB573100852C21 /* WKExampleViewController.swift */; };
+		7925ACAC1CDB576100852C21 /* WKExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925ACAB1CDB576100852C21 /* WKExampleTableViewController.swift */; };
+		796623581CD1F3AF00E90DA8 /* ScrollViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796623571CD1F3AF00E90DA8 /* ScrollViewCategory.swift */; };
+		79895D621CD093B300B880DC /* WKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79895D611CD093B300B880DC /* WKCollectionViewCell.swift */; };
+		79895D651CD094E700B880DC /* WKFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79895D641CD094E700B880DC /* WKFlowLayout.swift */; };
+		79895D691CD0CA2200B880DC /* ViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79895D681CD0CA2200B880DC /* ViewCategory.swift */; };
+		79895D6C1CD1A59700B880DC /* WKAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79895D6B1CD1A59700B880DC /* WKAppearance.swift */; };
+		798A22661CDAE95C00E5D045 /* WKPureRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A22651CDAE95C00E5D045 /* WKPureRefreshFooter.swift */; };
+		799901AF1CD9D49600A84928 /* WKRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799901AE1CD9D49600A84928 /* WKRefreshFooter.swift */; };
+		799901B31CDA166800A84928 /* WKPureRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799901B21CDA166800A84928 /* WKPureRefreshHeader.swift */; };
+		79C81B311D18E48600404A47 /* WKRefreshFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C81B301D18E48600404A47 /* WKRefreshFunctions.swift */; };
+		79DEEBE01CD3376F005CAF41 /* WKRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DEEBDF1CD3376F005CAF41 /* WKRefreshHeader.swift */; };
+		79F0316D1CDC614C0009F84B /* WKPureHeaderExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0316C1CDC614C0009F84B /* WKPureHeaderExampleController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7906B3AF1CCF42EF0026B617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7906B3921CCF42EF0026B617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7906B3991CCF42EF0026B617;
+			remoteInfo = WKRefreshDemo;
+		};
+		7906B3BA1CCF42EF0026B617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7906B3921CCF42EF0026B617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7906B3991CCF42EF0026B617;
+			remoteInfo = WKRefreshDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7906B39A1CCF42EF0026B617 /* WKRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7906B39D1CCF42EF0026B617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7906B3A41CCF42EF0026B617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7906B3A71CCF42EF0026B617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7906B3A91CCF42EF0026B617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7906B3AE1CCF42EF0026B617 /* WKRefreshDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKRefreshDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7906B3B21CCF42EF0026B617 /* WKRefreshDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKRefreshDemoTests.swift; sourceTree = "<group>"; };
+		7906B3B41CCF42EF0026B617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7906B3B91CCF42EF0026B617 /* WKRefreshDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKRefreshDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7906B3BD1CCF42EF0026B617 /* WKRefreshDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKRefreshDemoUITests.swift; sourceTree = "<group>"; };
+		7906B3BF1CCF42EF0026B617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7906B3CD1CD056AE0026B617 /* WKRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRefreshControl.swift; sourceTree = "<group>"; };
+		7906B3CF1CD05DBD0026B617 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7920F57E1CD8499F0084B490 /* WKRichRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRichRefreshHeader.swift; sourceTree = "<group>"; };
+		7920F5801CD84B8C0084B490 /* WKAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKAnimationView.swift; sourceTree = "<group>"; };
+		7920F5851CD89E7A0084B490 /* WKRefreshAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WKRefreshAssets.xcassets; sourceTree = "<group>"; };
+		7920F5871CD89ECA0084B490 /* WKArrowActivityAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKArrowActivityAnimationView.swift; sourceTree = "<group>"; };
+		7920F5891CD8AB6C0084B490 /* WKGIFRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKGIFRefreshHeader.swift; sourceTree = "<group>"; };
+		7920F58B1CD8ACAF0084B490 /* WKGIFAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKGIFAnimationView.swift; sourceTree = "<group>"; };
+		7925ACA01CDAF15700852C21 /* WKRichRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRichRefreshFooter.swift; sourceTree = "<group>"; };
+		7925ACA21CDB335400852C21 /* WKGIFRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKGIFRefreshFooter.swift; sourceTree = "<group>"; };
+		7925ACA71CDB573100852C21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7925ACA81CDB573100852C21 /* WKExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKExampleViewController.swift; sourceTree = "<group>"; };
+		7925ACAB1CDB576100852C21 /* WKExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKExampleTableViewController.swift; sourceTree = "<group>"; };
+		796623571CD1F3AF00E90DA8 /* ScrollViewCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCategory.swift; sourceTree = "<group>"; };
+		79895D611CD093B300B880DC /* WKCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKCollectionViewCell.swift; sourceTree = "<group>"; };
+		79895D641CD094E700B880DC /* WKFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKFlowLayout.swift; sourceTree = "<group>"; };
+		79895D681CD0CA2200B880DC /* ViewCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCategory.swift; sourceTree = "<group>"; };
+		79895D6B1CD1A59700B880DC /* WKAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKAppearance.swift; sourceTree = "<group>"; };
+		798A22651CDAE95C00E5D045 /* WKPureRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPureRefreshFooter.swift; sourceTree = "<group>"; };
+		799901AE1CD9D49600A84928 /* WKRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRefreshFooter.swift; sourceTree = "<group>"; };
+		799901B21CDA166800A84928 /* WKPureRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPureRefreshHeader.swift; sourceTree = "<group>"; };
+		79C81B301D18E48600404A47 /* WKRefreshFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRefreshFunctions.swift; sourceTree = "<group>"; };
+		79DEEBDF1CD3376F005CAF41 /* WKRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKRefreshHeader.swift; sourceTree = "<group>"; };
+		79F0316C1CDC614C0009F84B /* WKPureHeaderExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPureHeaderExampleController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7906B3971CCF42EF0026B617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3AB1CCF42EF0026B617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3B61CCF42EF0026B617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7906B3911CCF42EF0026B617 = {
+			isa = PBXGroup;
+			children = (
+				7906B3CB1CCF43100026B617 /* RefreshToolkit */,
+				7906B39C1CCF42EF0026B617 /* WKRefreshDemo */,
+				7906B3B11CCF42EF0026B617 /* WKRefreshDemoTests */,
+				7906B3BC1CCF42EF0026B617 /* WKRefreshDemoUITests */,
+				7906B39B1CCF42EF0026B617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7906B39B1CCF42EF0026B617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7906B39A1CCF42EF0026B617 /* WKRefreshDemo.app */,
+				7906B3AE1CCF42EF0026B617 /* WKRefreshDemoTests.xctest */,
+				7906B3B91CCF42EF0026B617 /* WKRefreshDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7906B39C1CCF42EF0026B617 /* WKRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7925ACA61CDB573100852C21 /* Controller */,
+				79895D631CD094CE00B880DC /* Layouts */,
+				79895D601CD0939D00B880DC /* Views */,
+				7906B39D1CCF42EF0026B617 /* AppDelegate.swift */,
+				7906B3CF1CD05DBD0026B617 /* Main.storyboard */,
+				7906B3A41CCF42EF0026B617 /* Assets.xcassets */,
+				7906B3A61CCF42EF0026B617 /* LaunchScreen.storyboard */,
+				7906B3A91CCF42EF0026B617 /* Info.plist */,
+			);
+			path = WKRefreshDemo;
+			sourceTree = "<group>";
+		};
+		7906B3B11CCF42EF0026B617 /* WKRefreshDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7906B3B21CCF42EF0026B617 /* WKRefreshDemoTests.swift */,
+				7906B3B41CCF42EF0026B617 /* Info.plist */,
+			);
+			path = WKRefreshDemoTests;
+			sourceTree = "<group>";
+		};
+		7906B3BC1CCF42EF0026B617 /* WKRefreshDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7906B3BD1CCF42EF0026B617 /* WKRefreshDemoUITests.swift */,
+				7906B3BF1CCF42EF0026B617 /* Info.plist */,
+			);
+			path = WKRefreshDemoUITests;
+			sourceTree = "<group>";
+		};
+		7906B3CB1CCF43100026B617 /* RefreshToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				7920F5841CD89E5B0084B490 /* Resources */,
+				79895D6A1CD1A4D500B880DC /* Other */,
+				7906B3CC1CD056880026B617 /* Views */,
+			);
+			path = RefreshToolkit;
+			sourceTree = "<group>";
+		};
+		7906B3CC1CD056880026B617 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79895D681CD0CA2200B880DC /* ViewCategory.swift */,
+				7906B3CD1CD056AE0026B617 /* WKRefreshControl.swift */,
+				79DEEBDF1CD3376F005CAF41 /* WKRefreshHeader.swift */,
+				799901B21CDA166800A84928 /* WKPureRefreshHeader.swift */,
+				7920F57E1CD8499F0084B490 /* WKRichRefreshHeader.swift */,
+				7920F5891CD8AB6C0084B490 /* WKGIFRefreshHeader.swift */,
+				7920F5801CD84B8C0084B490 /* WKAnimationView.swift */,
+				7920F58B1CD8ACAF0084B490 /* WKGIFAnimationView.swift */,
+				7920F5871CD89ECA0084B490 /* WKArrowActivityAnimationView.swift */,
+				799901AE1CD9D49600A84928 /* WKRefreshFooter.swift */,
+				798A22651CDAE95C00E5D045 /* WKPureRefreshFooter.swift */,
+				7925ACA01CDAF15700852C21 /* WKRichRefreshFooter.swift */,
+				7925ACA21CDB335400852C21 /* WKGIFRefreshFooter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7920F5841CD89E5B0084B490 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7920F5851CD89E7A0084B490 /* WKRefreshAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7925ACA61CDB573100852C21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7925ACA71CDB573100852C21 /* ViewController.swift */,
+				7925ACA81CDB573100852C21 /* WKExampleViewController.swift */,
+				7925ACAB1CDB576100852C21 /* WKExampleTableViewController.swift */,
+				79F0316C1CDC614C0009F84B /* WKPureHeaderExampleController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79895D601CD0939D00B880DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79895D611CD093B300B880DC /* WKCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79895D631CD094CE00B880DC /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				79895D641CD094E700B880DC /* WKFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		79895D6A1CD1A4D500B880DC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				79895D6B1CD1A59700B880DC /* WKAppearance.swift */,
+				796623571CD1F3AF00E90DA8 /* ScrollViewCategory.swift */,
+				79C81B301D18E48600404A47 /* WKRefreshFunctions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7906B3991CCF42EF0026B617 /* WKRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7906B3C21CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemo" */;
+			buildPhases = (
+				7906B3961CCF42EF0026B617 /* Sources */,
+				7906B3971CCF42EF0026B617 /* Frameworks */,
+				7906B3981CCF42EF0026B617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKRefreshDemo;
+			productName = WKRefreshDemo;
+			productReference = 7906B39A1CCF42EF0026B617 /* WKRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7906B3AD1CCF42EF0026B617 /* WKRefreshDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7906B3C51CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemoTests" */;
+			buildPhases = (
+				7906B3AA1CCF42EF0026B617 /* Sources */,
+				7906B3AB1CCF42EF0026B617 /* Frameworks */,
+				7906B3AC1CCF42EF0026B617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7906B3B01CCF42EF0026B617 /* PBXTargetDependency */,
+			);
+			name = WKRefreshDemoTests;
+			productName = WKRefreshDemoTests;
+			productReference = 7906B3AE1CCF42EF0026B617 /* WKRefreshDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7906B3B81CCF42EF0026B617 /* WKRefreshDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7906B3C81CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemoUITests" */;
+			buildPhases = (
+				7906B3B51CCF42EF0026B617 /* Sources */,
+				7906B3B61CCF42EF0026B617 /* Frameworks */,
+				7906B3B71CCF42EF0026B617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7906B3BB1CCF42EF0026B617 /* PBXTargetDependency */,
+			);
+			name = WKRefreshDemoUITests;
+			productName = WKRefreshDemoUITests;
+			productReference = 7906B3B91CCF42EF0026B617 /* WKRefreshDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7906B3921CCF42EF0026B617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = hooge;
+				TargetAttributes = {
+					7906B3991CCF42EF0026B617 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4F9ZL3WLRY;
+					};
+					7906B3AD1CCF42EF0026B617 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7906B3991CCF42EF0026B617;
+					};
+					7906B3B81CCF42EF0026B617 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7906B3991CCF42EF0026B617;
+					};
+				};
+			};
+			buildConfigurationList = 7906B3951CCF42EF0026B617 /* Build configuration list for PBXProject "WKRefreshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7906B3911CCF42EF0026B617;
+			productRefGroup = 7906B39B1CCF42EF0026B617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7906B3991CCF42EF0026B617 /* WKRefreshDemo */,
+				7906B3AD1CCF42EF0026B617 /* WKRefreshDemoTests */,
+				7906B3B81CCF42EF0026B617 /* WKRefreshDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7906B3981CCF42EF0026B617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7920F5861CD89E7A0084B490 /* WKRefreshAssets.xcassets in Resources */,
+				7906B3A81CCF42EF0026B617 /* LaunchScreen.storyboard in Resources */,
+				7906B3A51CCF42EF0026B617 /* Assets.xcassets in Resources */,
+				7906B3D01CD05DBD0026B617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3AC1CCF42EF0026B617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3B71CCF42EF0026B617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7906B3961CCF42EF0026B617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799901AF1CD9D49600A84928 /* WKRefreshFooter.swift in Sources */,
+				7925ACA91CDB573100852C21 /* ViewController.swift in Sources */,
+				7920F58A1CD8AB6C0084B490 /* WKGIFRefreshHeader.swift in Sources */,
+				79F0316D1CDC614C0009F84B /* WKPureHeaderExampleController.swift in Sources */,
+				7920F57F1CD8499F0084B490 /* WKRichRefreshHeader.swift in Sources */,
+				7925ACA11CDAF15700852C21 /* WKRichRefreshFooter.swift in Sources */,
+				79895D651CD094E700B880DC /* WKFlowLayout.swift in Sources */,
+				7920F58C1CD8ACAF0084B490 /* WKGIFAnimationView.swift in Sources */,
+				79895D691CD0CA2200B880DC /* ViewCategory.swift in Sources */,
+				796623581CD1F3AF00E90DA8 /* ScrollViewCategory.swift in Sources */,
+				7920F5881CD89ECA0084B490 /* WKArrowActivityAnimationView.swift in Sources */,
+				79DEEBE01CD3376F005CAF41 /* WKRefreshHeader.swift in Sources */,
+				798A22661CDAE95C00E5D045 /* WKPureRefreshFooter.swift in Sources */,
+				7925ACA31CDB335400852C21 /* WKGIFRefreshFooter.swift in Sources */,
+				799901B31CDA166800A84928 /* WKPureRefreshHeader.swift in Sources */,
+				7906B3CE1CD056AE0026B617 /* WKRefreshControl.swift in Sources */,
+				79895D621CD093B300B880DC /* WKCollectionViewCell.swift in Sources */,
+				7920F5811CD84B8C0084B490 /* WKAnimationView.swift in Sources */,
+				7925ACAA1CDB573100852C21 /* WKExampleViewController.swift in Sources */,
+				79C81B311D18E48600404A47 /* WKRefreshFunctions.swift in Sources */,
+				7925ACAC1CDB576100852C21 /* WKExampleTableViewController.swift in Sources */,
+				7906B39E1CCF42EF0026B617 /* AppDelegate.swift in Sources */,
+				79895D6C1CD1A59700B880DC /* WKAppearance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3AA1CCF42EF0026B617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7906B3B31CCF42EF0026B617 /* WKRefreshDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7906B3B51CCF42EF0026B617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7906B3BE1CCF42EF0026B617 /* WKRefreshDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7906B3B01CCF42EF0026B617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7906B3991CCF42EF0026B617 /* WKRefreshDemo */;
+			targetProxy = 7906B3AF1CCF42EF0026B617 /* PBXContainerItemProxy */;
+		};
+		7906B3BB1CCF42EF0026B617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7906B3991CCF42EF0026B617 /* WKRefreshDemo */;
+			targetProxy = 7906B3BA1CCF42EF0026B617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7906B3A61CCF42EF0026B617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7906B3A71CCF42EF0026B617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7906B3C01CCF42EF0026B617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7906B3C11CCF42EF0026B617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7906B3C31CCF42EF0026B617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WKRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemo.hooge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		7906B3C41CCF42EF0026B617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WKRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemo.hooge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		7906B3C61CCF42EF0026B617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WKRefreshDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKRefreshDemo.app/WKRefreshDemo";
+			};
+			name = Debug;
+		};
+		7906B3C71CCF42EF0026B617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WKRefreshDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKRefreshDemo.app/WKRefreshDemo";
+			};
+			name = Release;
+		};
+		7906B3C91CCF42EF0026B617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WKRefreshDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WKRefreshDemo;
+			};
+			name = Debug;
+		};
+		7906B3CA1CCF42EF0026B617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WKRefreshDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hooge.WKRefreshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WKRefreshDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7906B3951CCF42EF0026B617 /* Build configuration list for PBXProject "WKRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7906B3C01CCF42EF0026B617 /* Debug */,
+				7906B3C11CCF42EF0026B617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7906B3C21CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7906B3C31CCF42EF0026B617 /* Debug */,
+				7906B3C41CCF42EF0026B617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7906B3C51CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7906B3C61CCF42EF0026B617 /* Debug */,
+				7906B3C71CCF42EF0026B617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7906B3C81CCF42EF0026B617 /* Build configuration list for PBXNativeTarget "WKRefreshDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7906B3C91CCF42EF0026B617 /* Debug */,
+				7906B3CA1CCF42EF0026B617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7906B3921CCF42EF0026B617 /* Project object */;
+}
