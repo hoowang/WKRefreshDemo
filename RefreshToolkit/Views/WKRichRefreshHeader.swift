@@ -2,7 +2,7 @@
 //  WKRichRefreshHeader.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/5/3.
+//  Created by hooge on 16/5/3.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 //   功能丰富的下拉刷新组件、带有简单的动画状态

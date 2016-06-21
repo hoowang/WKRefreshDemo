@@ -2,7 +2,7 @@
 //  WKRefreshFunctions.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/6/21.
+//  Created by hooge on 16/6/21.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 

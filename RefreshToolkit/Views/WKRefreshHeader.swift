@@ -2,7 +2,7 @@
 //  WKRefreshHeader.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/4/29.
+//  Created by hooge on 16/4/29.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 

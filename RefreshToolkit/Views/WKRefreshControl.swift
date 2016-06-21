@@ -2,7 +2,7 @@
 //  WKRefreshControl.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/4/27.
+//  Created by hooge on 16/4/27.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 //  这个类是一切组件的基类 但是swift不好实现真正意义上的抽象基类（协议与C++中的抽象基类还是有很大的区别）

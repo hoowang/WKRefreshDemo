@@ -2,7 +2,7 @@
 //  WKGIFRefreshHeader.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/5/3.
+//  Created by hooge on 16/5/3.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 //  带有GIF动画的 刷新组件

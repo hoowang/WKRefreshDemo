@@ -2,7 +2,7 @@
 //  WKPureRefreshFooter.swift
 //  WKRefreshDemo
 //
-//  Created by 王虎 on 16/5/5.
+//  Created by hooge on 16/5/5.
 //  Copyright © 2016年 hooge. All rights reserved.
 //
 //  这是一个纯洁的上拉刷新组件 仅仅显示一个指示器
