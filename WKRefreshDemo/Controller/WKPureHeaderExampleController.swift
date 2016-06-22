@@ -23,18 +23,15 @@ class WKPureHeaderExampleController: UITableViewController {
             })
         })
         
-         self.refreshHeader?.beginRefresh()
-        
-        // self.refreshHeader?.backgroundColor = UIColor.blueColor()
-        
+        self.refreshHeader?.beginRefresh()
+
         self.refreshFooter = WKRichRefreshFooter.refreshFooterFor(self.tableView, callback: { () -> (Void) in
             dispatch_after(dispatch_time(0, 1000 * 1000 * 1000 ), dispatch_get_main_queue(), {
                 [unowned self] in
                 self.refreshFooter.completeRefresh()
             })
         })
-        
-    // self.automaticallyAdjustsScrollViewInsets = true
+
         
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier")
     }
