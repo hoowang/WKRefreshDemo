@@ -63,7 +63,6 @@ extension WKRichRefreshFooter{
         
         let pullPercent =
             (contentOffsetY + scrollViewHeight - self.scrollView!.contentSize.height) / self.wk_Height
-        // print("pullPercent:\(pullPercent)")
         
         if self.scrollView!.dragging {
             self.refreshState = .DragingState

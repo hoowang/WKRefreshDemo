@@ -17,7 +17,7 @@ class WKExampleTableViewController: UITableViewController {
 
        self.refreshHeader = WKRichRefreshHeader.refreshHeaderFor(
             self.tableView, target:self, action:#selector(WKExampleTableViewController.refreshCallback))
-       // self.refreshHeader!.beginRefresh()
+        self.refreshHeader!.beginRefresh()
     }
     
     override func viewWillAppear(animated: Bool) {

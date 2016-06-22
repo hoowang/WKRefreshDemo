@@ -40,12 +40,8 @@ public class WKRefreshHeader: WKRefreshControl {
         }
         
         if self.scrollView!.dragging == false && self.codeToRefresh == false && self.isScrollViewDragged == false{
-            //wkLog("------------")
-            //self.scrollViewOriginalInset = self.scrollView!.contentInset
-            //print("--------------------********\(self.scrollViewOriginalInset)")
             return
         }
-        
         
         // 2.正在拖拽或者正在通过代码形式刷新 同时处于刷新状态 直接返回 保证一次操作的完整性
         if (self.scrollView!.dragging == true ||
@@ -61,14 +57,10 @@ public class WKRefreshHeader: WKRefreshControl {
         if (fabs(contentOffsetY) <= topInset) || contentOffsetY >= topInset {
             return
         }
-        
-        //wkLog("offsetY:\(contentOffsetY), inset:\(topInset)")
         // 4.拖拽到一定距离 切换拖拽控件的动画
         let offset = fabs(contentOffsetY) - topInset
-        // wkLog("当前offset:\(offset)")
 
         if offset >= self.wk_Height * 0.6 && self.isDragStateChanged == false{
-            wkLog("------------开始动画")
             self.changeIndicatorState(.WillRefresh)
             self.isDragStateChanged = true
         }
@@ -76,7 +68,6 @@ public class WKRefreshHeader: WKRefreshControl {
         if offset < self.wk_Height * 0.8 {
             return
         }
-        //self.scrollViewOriginalInset = self.scrollView!.contentInset
         if self.scrollView!.dragging == false {
             self.loadAnimators()
             self.refreshHandler()
@@ -95,12 +86,11 @@ public class WKRefreshHeader: WKRefreshControl {
             [unowned self] in
             UIView.animateWithDuration(0.35, animations: {
                 [unowned self] in
-                wkLog("-----******----\(self.scrollViewOriginalInset)")
                 self.scrollView?.contentInset = self.scrollViewOriginalInset
+                self.unloadAnimators()
+                self.changeIndicatorState(.Normal)
+                self.isDragStateChanged = false
             })
-            self.unloadAnimators()
-            self.changeIndicatorState(.Normal)
-            self.isDragStateChanged = false
         })
     }
     
@@ -127,23 +117,20 @@ public class WKRefreshHeader: WKRefreshControl {
 extension WKRefreshHeader{
     
     internal func refreshHandler(){
-        
-        self.refreshState = .RefreshingState
 
-//        if self.codeToRefresh == true {
-//            self.scrollViewOriginalInset = self.scrollView!.contentInset
-//            print("------------contentInset:\(self.scrollViewOriginalInset)")
-//        }
-        
+        self.refreshState = .RefreshingState
         UIView.animateWithDuration(WKAppearance.animationDuration, animations: {
             [unowned self] in
-            
-            
-            let newTopInset = self.scrollView!.contentInset.top + self.wk_Height
-            //wkLog("+++++++++++\(newTopInset)")
+            var newTopInset = self.scrollView!.contentInset.top + self.wk_Height
+            //wkLog("newTopInset:\(newTopInset)")
+            // 加上这句代码是为了解决PureHeader出现的莫名其妙的bug
+            if newTopInset > 64.0 + self.wk_Height{
+                newTopInset = self.scrollViewOriginalInset.top + self.wk_Height
+            }
+            //wkLog("newTopInset:\(newTopInset)")
             self.scrollView?.wk_InsetTop = newTopInset
             self.scrollView?.wk_OffsetY = 0.0 - newTopInset
-            //wkLog("OriginalInset:\(self.scrollViewOriginalInset), newTopInset:\(newTopInset)")
+
         }) {[unowned self] (_) in
             
             switch self.callbackMode{

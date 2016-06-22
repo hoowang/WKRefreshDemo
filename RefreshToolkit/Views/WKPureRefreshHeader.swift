@@ -25,14 +25,12 @@ public class WKPureRefreshHeader: WKRefreshHeader {
     }
     
     override func loadAnimators() {
-        // wkLog("loadAnimators-------")
         dispatch_async(dispatch_get_main_queue()) {
             self.activityView.startAnimating()
         }
     }
     
     override func unloadAnimators() {
-       // wkLog("unloadAnimators-------")
         dispatch_async(dispatch_get_main_queue()) { 
             
             self.activityView.stopAnimating()
@@ -58,7 +56,6 @@ extension WKPureRefreshHeader{
     internal override func refreshHandler() {
         self.codeToRefresh = true
         super.refreshHandler()
-        
     }
 }
 

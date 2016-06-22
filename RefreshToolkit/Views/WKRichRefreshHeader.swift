@@ -98,7 +98,6 @@ extension WKRichRefreshHeader{
         }
         
         guard self.refreshState == WKRefreshState.RefreshingState else{
-            // wkLog("这里返回了--------")
             return
         }
         self.descritionLabel.text = self.refreshingText()

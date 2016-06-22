@@ -19,11 +19,13 @@ class WKPureHeaderExampleController: UITableViewController {
             [unowned self]() -> (Void) in
             dispatch_after(dispatch_time(0, 1000 * 1000 * 1000 ), dispatch_get_main_queue(), {
                 [unowned self] in
-                self.refreshHeader?.completeRefresh()
+                 self.refreshHeader?.completeRefresh()
             })
         })
         
          self.refreshHeader?.beginRefresh()
+        
+        // self.refreshHeader?.backgroundColor = UIColor.blueColor()
         
         self.refreshFooter = WKRichRefreshFooter.refreshFooterFor(self.tableView, callback: { () -> (Void) in
             dispatch_after(dispatch_time(0, 1000 * 1000 * 1000 ), dispatch_get_main_queue(), {
@@ -31,6 +33,8 @@ class WKPureHeaderExampleController: UITableViewController {
                 self.refreshFooter.completeRefresh()
             })
         })
+        
+    // self.automaticallyAdjustsScrollViewInsets = true
         
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier")
     }
@@ -60,55 +64,11 @@ class WKPureHeaderExampleController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        cell.backgroundColor = UIColor.cyanColor()
+        // cell.backgroundColor = UIColor.cyanColor()
 
         return cell
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

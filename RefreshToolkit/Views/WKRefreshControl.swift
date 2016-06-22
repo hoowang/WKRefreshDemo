@@ -28,12 +28,12 @@ enum WKCallbackMode {
 public class WKRefreshControl: UIView {
     private let WKRefreshKeyPathContentOffset = "contentOffset"
     internal var callbackMode = WKCallbackMode.ClosureMode
-    internal weak var scrollView:UIScrollView?
     internal var refreshState = WKRefreshState.InvalidState
     internal var callback:(()->(Void)) = {}
-    internal weak var targetObject:AnyObject?
     internal var selector:Selector?
     internal var codeToRefresh = false
+    internal weak var scrollView:UIScrollView?
+    internal weak var targetObject:AnyObject?
     
     // 用于记录scrollView的初始Inset值
     internal var scrollViewOriginalInset = UIEdgeInsetsZero
@@ -118,8 +118,6 @@ extension WKRefreshControl{
             return
         }
         let originalInset = self.scrollView!.contentInset
-//        wkLog("originalInset:\(originalInset)")
-//        self.scrollViewOriginalInset = originalInset
         self.placeSubViews()
         
         if self.codeToRefresh == true {
