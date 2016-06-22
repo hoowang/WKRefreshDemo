@@ -109,20 +109,28 @@ extension WKRefreshControl{
         self.scrollView = newSuperview as? UIScrollView
         self.wk_Origin.x = 0
         self.wk_Width = (newSuperview?.wk_Width)!
-      
         self.addObservers()
     }
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        self.placeSubViews()
         guard self.scrollView != nil else{
             return
         }
         let originalInset = self.scrollView!.contentInset
-        self.scrollViewOriginalInset = UIEdgeInsetsMake(
-            originalInset.top - WKAppearance.refreshHeaderHeight,
-            originalInset.left, originalInset.bottom, originalInset.right)
+//        wkLog("originalInset:\(originalInset)")
+//        self.scrollViewOriginalInset = originalInset
+        self.placeSubViews()
+        
+        if self.codeToRefresh == true {
+            
+            self.scrollViewOriginalInset = UIEdgeInsetsMake(
+                originalInset.top - WKAppearance.refreshHeaderHeight,
+                originalInset.left, originalInset.bottom, originalInset.right)
+        }
+        else{
+            self.scrollViewOriginalInset = originalInset
+        }
     }
 }
 

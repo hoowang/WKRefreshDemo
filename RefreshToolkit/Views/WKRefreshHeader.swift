@@ -40,7 +40,9 @@ public class WKRefreshHeader: WKRefreshControl {
         }
         
         if self.scrollView!.dragging == false && self.codeToRefresh == false && self.isScrollViewDragged == false{
-            wkLog("------------")
+            //wkLog("------------")
+            //self.scrollViewOriginalInset = self.scrollView!.contentInset
+            //print("--------------------********\(self.scrollViewOriginalInset)")
             return
         }
         
@@ -74,7 +76,7 @@ public class WKRefreshHeader: WKRefreshControl {
         if offset < self.wk_Height * 0.8 {
             return
         }
-        self.scrollViewOriginalInset = self.scrollView!.contentInset
+        //self.scrollViewOriginalInset = self.scrollView!.contentInset
         if self.scrollView!.dragging == false {
             self.loadAnimators()
             self.refreshHandler()
@@ -85,17 +87,20 @@ public class WKRefreshHeader: WKRefreshControl {
     internal func loadAnimators() ->(Void) {}
     internal func unloadAnimators() ->(Void) {}
     internal func changeIndicatorState(state:AnimationState) ->(Void){}
+    
+    
     public override func completeRefresh() -> (Void){
         self.refreshState = .IdleState
         dispatch_async(dispatch_get_main_queue(), {
             [unowned self] in
             UIView.animateWithDuration(0.35, animations: {
                 [unowned self] in
+                wkLog("-----******----\(self.scrollViewOriginalInset)")
                 self.scrollView?.contentInset = self.scrollViewOriginalInset
-                self.unloadAnimators()
-                self.changeIndicatorState(.Normal)
-                self.isDragStateChanged = false
             })
+            self.unloadAnimators()
+            self.changeIndicatorState(.Normal)
+            self.isDragStateChanged = false
         })
     }
     
@@ -124,16 +129,21 @@ extension WKRefreshHeader{
     internal func refreshHandler(){
         
         self.refreshState = .RefreshingState
+
+//        if self.codeToRefresh == true {
+//            self.scrollViewOriginalInset = self.scrollView!.contentInset
+//            print("------------contentInset:\(self.scrollViewOriginalInset)")
+//        }
+        
         UIView.animateWithDuration(WKAppearance.animationDuration, animations: {
             [unowned self] in
-            var newTopInset = self.scrollViewOriginalInset.top + self.wk_Height
-            if newTopInset > 64.0 + self.wk_Height{
-                newTopInset = 64.0 + self.wk_Height
-            }
             
+            
+            let newTopInset = self.scrollView!.contentInset.top + self.wk_Height
+            //wkLog("+++++++++++\(newTopInset)")
             self.scrollView?.wk_InsetTop = newTopInset
             self.scrollView?.wk_OffsetY = 0.0 - newTopInset
-            wkLog("OriginalInset:\(self.scrollViewOriginalInset), newTopInset:\(newTopInset)")
+            //wkLog("OriginalInset:\(self.scrollViewOriginalInset), newTopInset:\(newTopInset)")
         }) {[unowned self] (_) in
             
             switch self.callbackMode{
